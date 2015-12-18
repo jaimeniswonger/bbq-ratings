@@ -17,6 +17,7 @@
 	<modules>
 		<module>eureka-server</module>
 		<module>microservices-restaurants</module>
+		<module>microservices-ratings</module>
 		<module>api-gateway</module>
 	</modules>
 

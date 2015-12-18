@@ -10,10 +10,17 @@ endpoints:
     sensitive: false
 
 zuul:
+  prefix: /api
+  ignoredServices: '*'
   routes:
       restaurants:
-        path: /api/**
+        path: /restaurants/**
         serviceId: restaurants
+        stripPrefix: false
+      ratings:
+        path: /ratings/**
+        serviceId: ratings
+        stripPrefix: false
 
 server:
   port: 8765
