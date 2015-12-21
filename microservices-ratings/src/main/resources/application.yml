@@ -18,23 +18,23 @@ endpoints:
 #  ribbon:
 #    ServerListRefreshInterval: 1000
 
-eureka:
-  instance:
-    leaseRenewalIntervalInSeconds: 10
-    metadataMap:
-      instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${server.port}}}
-  client:
-    region: default
-    registryFetchIntervalSeconds: 5
-    availabilityZones: 
-      default: ${APPLICATION_DOMAIN:${DOMAIN:defaultZone}}
+#eureka:
+#  instance:
+#    leaseRenewalIntervalInSeconds: 10
+#    metadataMap:
+#      instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${server.port}}}
+#  client:
+#    region: default
+#    registryFetchIntervalSeconds: 5
+#    availabilityZones: 
+#      default: ${APPLICATION_DOMAIN:${DOMAIN:defaultZone}}
 
 # For demo only allow more hystrix connections
-hystrix:
-  stream:
+#hystrix:
+#  stream:
 #    maxConcurrentConnections: 20
-    bus:
-      enabled: true
+#    bus:
+#      enabled: true
 
 #spring:
 #  rabbitmq:
