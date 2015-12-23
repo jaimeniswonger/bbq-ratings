@@ -11,15 +11,10 @@
 	<artifactId>microservices-ratings</artifactId>
 
 	<properties>
-		<java.version>1.8</java.version>
 		<docker.image.name>ratings</docker.image.name>
 	</properties>
 
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
-		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
