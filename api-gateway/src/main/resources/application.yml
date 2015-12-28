@@ -1,6 +1,9 @@
 info:
   component: API Gateway
   
+server:
+  port: 8765
+  
 endpoints:
   restart:
     enabled: true
@@ -21,9 +24,6 @@ zuul:
         path: /ratings/**
         serviceId: ratings
         stripPrefix: false
-
-server:
-  port: 8765
 
 logging:
   level:

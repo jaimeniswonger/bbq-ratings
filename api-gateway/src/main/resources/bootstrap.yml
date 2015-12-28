@@ -1,7 +1,7 @@
 spring:
   application:
-    name: apigateway
-#  cloud:
-#    config:
+    name: api-gateway
+  cloud:
+    config:
 #      uri: ${vcap.services.${PREFIX:}configserver.credentials.uri:http://user:password@localhost:8888}
       

@@ -12,10 +12,10 @@
 		<groupId>com.keyholesoftware</groupId>
 		<artifactId>bbq-ratings</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
-		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 
 	<properties>
+		<docker.image.name>api-gateway</docker.image.name>
 	</properties>
 
 	<dependencies>

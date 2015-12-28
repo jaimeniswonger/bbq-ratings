@@ -24,6 +24,7 @@
 	</dependencies>
 
 	<properties>
+		<docker.image.name>eureka-server</docker.image.name>
 	</properties>
 
 	<build>

@@ -25,7 +25,7 @@
 	<properties>
 		<java.version>1.8</java.version>
 		<spring-cloud.version>Brixton.BUILD-SNAPSHOT</spring-cloud.version>
-		<docker.image.prefix>springcloud</docker.image.prefix>
+		<docker.image.prefix>bbq-ratings</docker.image.prefix>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
@@ -100,9 +100,19 @@
 				<groupId>com.spotify</groupId>
 				<artifactId>docker-maven-plugin</artifactId>
 				<version>0.2.3</version>
-				<configuration>
+
+<!-- 				 <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>build</goal>
+                        </goals>
+                    </execution>
+                </executions>
+ -->
+ 				<configuration>
 					<imageName>${docker.image.prefix}/${docker.image.name}</imageName>
-					<dockerDirectory>src/main/docker</dockerDirectory>
+					<dockerDirectory>${project.basedir}/src/main/docker</dockerDirectory>
 					<resources>
 						<resource>
 							<targetPath>/</targetPath>
